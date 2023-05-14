@@ -1,0 +1,104 @@
+:root {
+    --primary: #5994cd;
+    --light-gray: #ededed;
+    --gray: #e0e0e0;
+    --transition-time: 0.5s;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-hover-bg: #0b5ed7;
+}
+
+.ripple {
+    transition: background-color var(--transition-time);
+    background-color: transparent;
+}
+
+.ripple:hover {
+    background-color: var(--light-gray);
+}
+
+#header {
+    background-color: white;
+}
+
+#menu-button {
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+}
+
+#logo-img {
+    padding-top: 5px;
+    width: 40px;
+}
+
+#logo-name {
+    color: var(--primary);
+    font-size: 30px;
+}
+
+#menu {
+    padding-top: 113px;
+    width: 300px;
+    transition: left var(--transition-time);
+    left: 0;
+    background-color: white;
+}
+
+.menu-button {
+    color: black;
+    text-decoration: none;
+    background-color: #ddeaf5;
+}
+
+#menu-helper {
+    transition: width var(--transition-time);
+}
+
+#main {
+    padding-top: 193px;
+    transition: width var(--transition-time);
+}
+
+#tables-wrapper {
+    width: 50%;
+}
+
+.clear-button {
+    width: 30px;
+    height: 30px;
+}
+
+.add-button {
+    width: 40px;
+    height: 40px;
+    transition: background-color var(--transition-time);
+    background-color: var(--bs-btn-bg);
+}
+
+.add-button:hover {
+    background-color: var(--bs-btn-hover-bg);
+}
+
+.editable-table-value {
+    cursor: pointer;
+}
+
+.editable-table-edit {
+    width: 25px;
+    height: 25px;
+}
+
+.editable-table-input {
+    cursor: text;
+}
+
+.editable-table-check {
+    width: 25px;
+    background-color: var(--light-gray);
+}
+
+@media only screen and (max-width: 992px) {
+    #tables-wrapper {
+      width: 80%;
+    }
+}
